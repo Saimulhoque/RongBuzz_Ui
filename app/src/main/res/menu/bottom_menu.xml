@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/upcoming"
+        android:title="Upcoming"
+        android:icon="@drawable/video"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/livetv"
+        android:title="Live Tv"
+        android:icon="@drawable/facebook"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sports"
+        android:title="Sports"
+        android:icon="@drawable/football"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/kids"
+        android:icon="@drawable/kids"
+        android:title="Kids Zone"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>
