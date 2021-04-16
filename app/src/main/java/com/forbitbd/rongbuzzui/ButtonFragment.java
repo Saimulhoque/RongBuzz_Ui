@@ -1,5 +1,6 @@
-package com.forbitbd.rongbuzzui.category;
+package com.forbitbd.rongbuzzui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.forbitbd.rongbuzzui.R;
+import com.forbitbd.rongbuzzui.category.CategoryActivity;
 import com.forbitbd.rongbuzzui.adapter.CatAdapter;
 import com.forbitbd.rongbuzzui.model.Category;
 
@@ -49,7 +50,13 @@ public class ButtonFragment extends Fragment {
         categoryList.add(new Category(R.drawable.korean,"Korean"));
         categoryList.add(new Category(R.drawable.southindian,"South Indian "));
 
-        adapter = new CatAdapter(getContext(),categoryList);
+        adapter = new CatAdapter(getContext(), categoryList, new CatClickListener() {
+            @Override
+            public void OnCatItemClick(Category category) {
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
         recyclerView.setAdapter(adapter);
         return view;
     }

@@ -23,19 +23,13 @@ public class AllMovieFragment extends Fragment {
    private RecyclerviewAdapter adapter;
    private ArrayList<Movie> movieList;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
     public AllMovieFragment() {
         // Required empty public constructor
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

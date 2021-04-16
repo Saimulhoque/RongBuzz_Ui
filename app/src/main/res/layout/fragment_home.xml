@@ -44,7 +44,7 @@
 
           <fragment
               android:id="@+id/category_button"
-              android:name="com.forbitbd.rongbuzzui.category.ButtonFragment"
+              android:name="com.forbitbd.rongbuzzui.ButtonFragment"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               tools:layout="@layout/fragment_button" />
